@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Alphabetical Framing </title>
+<link rel="stylesheet" type="text/css" href="unit4gamecss.css" />
+<script src="jquery.js"></script>
+<script  src="unit4gamejs.js"> </script>
+
+<script>
+
+window.onload = assignonload;
+
+</script>
+</head>
+<body>
+<script type="text/javascript" src="wz_tooltip.js"></script>
+<div id="upperbackground" width="100%">
+
+<h1 style="position: relative;left: 35%; top:5%;font-size:50px; color: green"> <bold> Alphabetical Order</bold> </h1>
+<h2> <img id="speaker" src="images/speakericon.png" width="100px" height="100px" onclick="playInstruction()" draggable="false"/> </h2>
+<div id="firstspace"   ondrop="drop1(event)" ondragover="allowDrop(event)" >1
+<img  id="word1"  onmouseover="spellword('firstword')" onmouseout="UnTip()"   width="100px" height="100px"/>
+</div>
+
+<div id="secondspace"   ondrop="drop2(event)" ondragover="allowDrop(event)">2
+<img  id="word2"  onmouseover="spellword('secondword')" onmouseout="UnTip()"   width="100px" height="100px" />
+</div>
+
+<div id="thirdspace" ondrop="drop3(event)" ondragover="allowDrop(event)">3
+<img  id="word3"  onmouseover="spellword('thirdword')" onmouseout="UnTip()"   width="100px" height="100px"/>
+</div>
+
+<div id="fourthspace"  ondrop="drop4(event)" ondragover="allowDrop(event)">4
+<img  id="word4"  onmouseover="spellword('fourthword')" onmouseout="UnTip()"   width="100px" height="100px" />
+</div>
+
+<div id="fifthspace"  ondrop="drop5(event)" ondragover="allowDrop(event)">5
+<img  id="word5"  onmouseover="spellword('fifthword')" onmouseout="UnTip()"   width="100px" height="100px" />
+</div>
+
+<div id="sixthspace" ondrop="drop6(event)" ondragover="allowDrop(event)">6
+<img  id="word6"  onmouseover="spellword('sixthword')" onmouseout="UnTip()"  width="100px" height="100px" />
+</div>
+
+<div id="seventhspace"  ondrop="drop7(event)" ondragover="allowDrop(event)">7
+<img  id="word7"  onmouseover="spellword('seventhword')" onmouseout="UnTip()"   width="100px" height="100px" />
+</div>
+
+
+</div>
+<div id="border"> </div>
+<img  id="firstword" onmouseover="spellword('firstword')" onmouseout="UnTip()" width="120px" height="130px" draggable="true" ondragstart="drag(event)"
+ onclick="playsound('firstword')"/>
+<img  id="secondword" onmouseover="spellword('secondword')" onmouseout="UnTip()" src="" width="120px" height="130px" draggable="true" ondragstart="drag(event)"
+onclick="playsound('secondword')"/>
+<img  id="thirdword"  onmouseover="spellword('thirdword')" onmouseout="UnTip()" width="120px" height="130px" draggable="true" ondragstart="drag(event)"
+ onclick="playsound('thirdword')"/>
+<img  id="fourthword"  onmouseover="spellword('fourthword')" onmouseout="UnTip()" width="120px" height="130px" draggable="true" ondragstart="drag(event)"
+onclick="playsound('fourthword')"/>
+<img  id="fifthword"   onmouseover="spellword('fifthword')" onmouseout="UnTip()"width="120px" height="130px" draggable="true" ondragstart="drag(event)"
+onclick="playsound('fifthword')"/>
+<img  id="sixthword"   onmouseover="spellword('sixthword')" onmouseout="UnTip()"width="120px" height="130px" draggable="true" ondragstart="drag(event)"
+onclick="playsound('sixthword')"/>
+<img  id="seventhword" onmouseover="spellword('seventhword')" onmouseout="UnTip()" width="120px" height="130px" draggable="true" ondragstart="drag(event)"
+onclick="playsound('seventhword')"/>
+
+<div id="placeholder" width="100%">
+
+
+
+</div>
+
+<div id="ending"> <a href="unit4game.html" onmouseover="playagain()"> <style="color:#FF0000"> <bold> PLAY AGAIN!!! </bold> </color> </a> </div>
+
+
+
+</body>
+
+</html>
